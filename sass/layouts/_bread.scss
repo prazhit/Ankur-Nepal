@@ -1,0 +1,66 @@
+.breadcrumbs{ 
+    text-align:center;
+    padding-top:18em;
+    padding-bottom:4em;
+
+    .container{
+
+        h1{
+            color:white;
+            font-weight:bold;
+            font-family:$cav-font;
+        }
+
+        a{
+            color:white;
+            transition: all .5s ease 0s;
+
+            &:hover{
+                color:$pri-color;
+            }
+        }
+    }
+    
+}
+
+.breadcrumbs.about{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/about-bread.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/contact-bread.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.member{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/member-bread.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.gallery{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/gallery-bread.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.service{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/service-bread.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.service-detail{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/gallery/gallery-7.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.breadcrumbs.gallery-detail{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/gallery/gallery-1.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.breadcrumbs.events{
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)),url(../pics/gallery/gallery-5.jpeg)center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

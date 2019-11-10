@@ -1,0 +1,26 @@
+@mixin animation($animation, $duration, $delay){  
+	-webkit-animation-name: $animation;				
+	-moz-animation-name: $animation;
+	-o-animation-name: $animation;
+	animation-name: $animation;					//Always write the orginal property at first
+	animation-duration: $duration;				
+	animation-delay: $delay;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+@mixin keyframes ($name){
+	@-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}                  
+                    
+       

@@ -1,0 +1,35 @@
+//------------transform----------------
+@mixin transform ($transform){
+	-webkit-transform: $transform;
+    -moz-transform : $transform;
+    transform:  $transform;
+}
+
+//------------transition----------------
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition:    $transition;
+    transition:         $transition;
+}
+
+//--------------translate-----------
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+//-----------------Rotate-----------------
+@mixin rotate ($deg) {                              //its use
+    @include transform(rotate(#{$deg}deg));         //@include rotate(180); 
+}
+
+
+//-----------------scale----------------
+@mixin scale($scale) {
+    @include transform(scale($scale));
+} 
+
+//-----------------skew-----------------
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+

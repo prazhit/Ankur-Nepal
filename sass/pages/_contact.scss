@@ -1,0 +1,90 @@
+.message{
+    .row{
+        h1{
+            position: relative;
+            display:inline-block;
+    
+            &:before{
+                position: absolute;
+                content: '';
+                top:120%;
+                left:0;
+                background: linear-gradient(to right,$sec-color,#f8f9fb);
+                width: 90%;
+                height: 5px; 
+             }
+        }
+        h5{
+            color:$font-color;
+        }
+
+        form{
+            input{
+                height:50px;
+                @include border-radius(0);
+                box-shadow: none;
+                background: #eff0f4;
+
+                &:focus{
+                    border:1px solid $pri-color;
+                }
+            }
+            textarea{
+                @include border-radius(0);
+                box-shadow: none;
+                background: #eff0f4;
+
+                &:focus{
+                    border:1px solid $pri-color;
+                }
+            }
+            .button{
+                &:hover {
+                    background: transparent;
+                    color: $pri-color;
+                    border:1px solid $pri-color;
+                    cursor: pointer;
+                }
+             
+                
+                background:$pri-color;
+                padding: 15px 30px;
+                @include border-radius(50px);
+                color:white;
+                text-decoration:none;   
+                transition: all .5s ease-in-out 0s;
+                border:1px solid transparent;
+                display: inline-block;
+                white-space: nowrap;
+                
+            }
+        }
+
+        .icon i{
+            height:60px;
+            width:60px;
+            line-height:60px;
+            text-align: center;
+            @include border-radius(50%);
+            border:3px solid #e9e9e9;
+            font-size:1.8em;
+        }
+    }
+}
+
+.map{
+    h1{
+        position: relative;
+            display:inline-block;
+    
+            &:before{
+                position: absolute;
+                content: '';
+                top:120%;
+                left:0;
+                background: linear-gradient(to right,$sec-color,#f8f9fb);
+                width: 90%;
+                height: 5px; 
+             }
+    }
+}

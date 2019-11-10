@@ -1,0 +1,163 @@
+.gallery-title{
+    .img{
+        display: block;
+        color:white;
+        @include border-radius(10px);
+        position: relative;
+        z-index:1;
+        overflow: hidden;
+
+        &:after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:0;
+            left:0;
+            background: rgba(0, 0, 0, 0.596);
+            @include transition(all .5s ease 0s);
+            z-index: -1;
+            opacity:0;
+
+        }
+        
+        &:hover:after{
+            opacity:1;
+        }
+
+        .content{
+
+            h5{
+                text-shadow: 0 0 10px grey;
+            }
+        }
+    }
+    .img-1{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-1.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+    .img-2{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-11.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+    .img-3{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-3.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+    .img-4{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-9.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+    .img-5{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-10.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+    .img-6{
+        background:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-12.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:280px;
+    }
+
+
+}
+
+
+.gallery-pic{
+
+    .col{
+        padding:5px;
+    }
+    
+    .pic{
+        width:100%;
+        min-height:250px;
+        overflow: hidden;
+        position: relative;
+        z-index:1;
+        @include border-radius(10px);
+
+        p,small{
+           color:lightgrey;
+           @include transition(all .5s ease 0s);
+           @include transform(translateY(50%));
+           opacity:0;
+           margin-top:8px;
+
+        }
+
+        &:after{
+            content:'';
+            background: $sec-color;
+            position: absolute;
+            top:0;
+            left:-20%;
+            height:100%;
+            width: 20%;
+            opacity: .5;
+            @include transition(all .5s ease 0s);    
+            z-index: -1;                
+        }
+        &:before{
+            content:'';
+            background: $sec-color;
+            position: absolute;
+            top:0;
+            right:-20%;
+            height:100%;
+            width: 20%;
+            opacity: .5;
+            @include transition(all .5s ease 0s);
+            z-index:-1;
+        }
+
+        &:hover:after{
+            left:0;
+        }
+        &:hover:before{
+            right:0;
+        }
+        &:hover p{
+            opacity:1;
+        }
+
+        &:hover small{
+            @include transform(translateY(0));
+            opacity: 1;
+        }
+    }
+    .pic-1{
+        background:linear-gradient(rgba(0, 0, 0, 0.445),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-9.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pic-2{
+        background:linear-gradient(rgba(0, 0, 0, 0.445),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-10.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pic-3{
+        background:linear-gradient(rgba(0, 0, 0, 0.445),rgba(0, 0, 0, 0.253)),url(../pics/gallery/gallery-12.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

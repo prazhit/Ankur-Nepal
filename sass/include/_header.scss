@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap');
+
+/*============ Common Style =======*/
+
+$pri-color:#39ab1f;
+$sec-color:#2b486e;
+$font-color:#818c98;
+$bg-color: #232730;
+$pri-font: 'Ubuntu', sans-serif;
+$sec-font:'Jomolhari', serif;
+$cav-font:'Caveat', cursive;
+
+
+
+*{
+    font-family: $pri-font;
+    scroll-behavior: smooth;
+}
+img{
+    object-fit: cover;
+}
+
+.title h6{
+    color:$font-color;
+    background: rgba(211, 211, 211, 0.338);
+    padding:10px 20px;
+    display: inline-block;
+    font-weight:bold;
+    margin:auto;
+    @include border-radius(10px);
+}
+p{
+    font-family: $sec-font;
+    color:$font-color;
+}
+.span{
+    color:$pri-color;
+}
+.span1{
+    color:$sec-color;
+}
+.section-padding{
+    padding:100px 0;
+}
+a{
+    text-decoration:none!important;
+}
+
+@include media(mb){
+    html{
+        font-size:90%;
+    }
+}
+
+/*============ Header ===========*/
+
+.scroll-nav{
+    position:fixed!important;
+    top:0!important;
+    left:0;
+    background: #232730e3;
+    width:100%!important;
+    transition: .5s;
+    padding:0 30px!important;
+
+}
+.scroll-nav .navbar-nav{
+    margin-left: auto!important;
+    margin-right:0!important;
+    font-size:.9em;
+}
+.scroll-nav .navbar-brand img{
+    max-height:50px!important;
+    
+}
+
+nav.navbar{
+    position:absolute;
+    z-index: 5;
+    left:50%;
+    top:5%;
+    transform: translateX(-50%);
+    width: 90%;
+
+    @include media(sm){
+        background: $bg-color;
+        width:100%;
+        top:0;
+        position:relative;
+    }
+
+    .navbar-nav{
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    .navbar-brand img{
+        max-height:100px;
+    }
+
+    button{
+        outline:none;
+    }
+    li a.active{
+        color:$pri-color;
+        position: relative;
+
+        &:after{
+            content: '';
+            position: absolute;
+            bottom:0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $pri-color;
+            height: 3px;
+            width: 85%;
+        }
+    }
+
+    .nav-link{
+        color:white;
+        transition: .5s;
+        white-space: nowrap;
+
+        &:hover{
+            color: $pri-color;
+            
+        }
+
+        @include media(sm){
+            padding:15px 0;
+        }
+    }
+    .donate{
+     
+        button{
+            background:$pri-color;
+            padding: 15px 30px;
+            @include border-radius(50px);
+            color:white;
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid transparent;
+            display: inline-block;
+            cursor: pointer;
+            white-space: nowrap;
+            font-weight:bold;
+
+            &:hover{
+                background: transparent;
+                color: white;
+                border:1px solid white;
+    
+            }
+        }
+    }
+    
+}
+
+.donate-form{
+    .modal-content{
+        background: $bg-color;
+
+        .modal-title h1{
+            font-family: $cav-font;
+        }
+
+        input,textarea{
+            @include border-radius(0);
+            height:45px;
+            box-shadow: none;
+            color:white;
+            background: none;
+            border:1px solid white;
+
+            &::placeholder{
+                color:white;
+            }
+
+            &:focus{
+                border:1px solid $sec-color;
+            }
+
+        }
+        form button{    
+            background:$sec-color;
+            padding: 10px 30px;
+            @include border-radius(50px);
+            color:white;
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid $sec-color;
+            display: inline-block;
+            white-space: nowrap;
+            cursor: pointer;
+            outline:none;
+    
+            &:hover{
+                background: transparent;
+                color: white;
+                border:1px solid $sec-color;
+    
+            }
+            
+        }
+    }
+}

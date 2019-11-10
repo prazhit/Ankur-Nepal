@@ -1,0 +1,135 @@
+.join-now{
+    background: url(../pics/map.png),$sec-color;
+    
+    background-size: cover;
+    .container{
+        .display-3{
+            font-family: $cav-font;
+        }
+        h4{
+            color:lightgrey;
+            line-height:35px;
+        }
+        .button{
+            border:3px solid white;
+            @include border-radius(50%);
+            padding:10px;
+            width:160px;
+            height:160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+                
+            button{
+                color:white;
+                background: none;
+                border:none;
+                outline:none;
+                cursor: pointer;
+                font-size:2.1em;
+                @include transition(all .5s ease 0s);
+                
+                &:hover{
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+    }
+}
+
+
+.member-modal{
+    .modal-content{
+        background: $bg-color;
+    }
+    .text{
+        h1{
+            font-family: $cav-font;
+        }
+    }
+    form button{    
+        background:$sec-color;
+        padding: 10px 30px;
+        @include border-radius(50px);
+        color:white;
+        text-decoration:none;   
+        transition: all .5s ease-in-out 0s;
+        border:1px solid $sec-color;
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        outline:none;
+
+        &:hover{
+            background: transparent;
+            color: white;
+            border:1px solid $sec-color;
+
+        }
+        
+    }
+    form input.form-control{
+        background: none;
+        border:1px solid white;
+        @include border-radius(50px);
+        height:45px;
+        box-shadow: none;
+        color:white;
+    }
+    form input::placeholder{
+        color:white;
+    }
+    form input:focus{
+        border:1px solid $sec-color;
+        background:none;
+    }
+    
+}
+
+.counting{
+    background: url(../pics/count.jpg)center no-repeat;
+    background-size: cover;
+
+    .nav-tabs{
+        border:none;
+        a{
+            color:white;
+            border:none;
+            font-weight:bold;
+            letter-spacing: 1px;
+
+            &:hover{
+                border:none;
+            }
+        }
+        .active{
+            background: rgba(0, 0, 0, 0.322);
+            border:none;
+            color:white;
+            @include border-radius(5px);
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            animation-duration: 1s;
+        }
+        .photos{
+            img{
+                height: 100px;
+                width:100px;
+                filter: grayscale(1);
+                transition: .5s;
+            }
+            a{
+                display: inline-block;
+                margin:0 10px 15px 0;
+
+                &:hover img{
+                    filter:grayscale(0);
+                }
+            }
+        }
+
+    }
+}

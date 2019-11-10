@@ -1,0 +1,343 @@
+.slider_inner{
+    position:relative;
+
+    .camera_prev,
+    .camera_next{
+        margin:0 20px;
+        @include border-radius(50%);
+        box-shadow: 0 0 40px grey;
+        background: lightgrey;
+    }
+
+    .camera_caption div{
+        background: none;
+
+        h1{
+            text-shadow: 0 0 20px rgba(99, 99, 99, 0.685);
+        }
+
+        h5{
+            font-size:1.5em;
+            margin:40px 0;
+            color:white;
+            letter-spacing: 1px;
+        }
+
+        button{
+            background:transparent;
+            padding: 15px 30px;
+            @include border-radius(50px);
+            color:white;
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid white;
+            display: inline-block;
+            cursor: pointer;
+            white-space: nowrap;
+            outline: none;
+            font-weight:bold;
+
+            &:hover{
+                background: $pri-color;
+                color: white;
+                border:1px solid $pri-color;
+    
+            }
+        }
+    
+    }
+    .cap1{
+        position: absolute;
+        top:60%;
+        left:50%;
+        @include transform (translate(-50%,-60%));
+        z-index:2;
+        
+    }
+    .cap2{
+        position: absolute;
+        top:50%;
+        @include transform (translateY(-50%));
+        z-index:2;
+        
+    }
+   
+}
+
+
+.what-we-do{
+    h5{
+        color:$font-color;
+    }
+    
+    .row .card{
+        color:black;
+        text-decoration: none;
+        transition:all .5s ease 0s;
+        @include border-radius(10px);
+        border:.5px solid $pri-color;
+
+        h4{
+            color:$sec-color;
+            transition:all .5s ease 0s;
+        }
+        
+        p{
+            transition:all .5s ease 0s;
+            font-family:$sec-font;
+            font-size:1.1em;
+        }
+
+        &:hover{
+            color:white;
+            background:$pri-color!important;
+        }
+        &:hover i,
+        &:hover p,
+        &:hover h4{
+            color:white;
+        }
+    }
+    .icon i{
+        color:$pri-color;
+        transition:all .5s ease 0s;
+
+    }
+    .head i{
+        color:$font-color;
+        transition: all .5s ease 0s;
+    }
+}
+
+
+.about-us{
+    .right-side{
+
+        h5{
+            color:$font-color;
+        }
+        p{
+            line-height: 25px;
+        }
+        .founder{
+            .img-box{
+                
+                img{
+                    @include border-radius(50%);
+                    height: 100px;
+                    width:100px;
+                    border:1px solid $pri-color;
+                }
+            }
+            
+        }
+        a{
+            color:$pri-color;
+            background:transparent;
+            padding: 15px 30px;
+            @include border-radius(50px);
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid $pri-color;
+            display: inline-block;
+
+            &:hover{
+                border:1px solid $pri-color;
+                color:white;
+                background:$pri-color;
+            }
+        }
+    }
+    .left-side{
+        background: url(../pics/featured-image-9.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 400px;
+    }
+   
+}
+
+
+.banner-service{
+    .card{
+        text-decoration:none;
+        border:none;
+        transition:all .5s ease-in-out 0s;
+
+        &:hover{
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.219);
+            background: transparent!important;
+        }
+        &:hover h5{
+            color:$pri-color;
+        }
+        &:hover .icon i{
+            @include border-radius(0px); 
+        }
+        h5{
+            transition:.5s;
+            color:$sec-color;
+        }
+        .icon i{
+            background:$pri-color;
+            height: 60px;
+            width:60px;
+            line-height:60px;
+            @include border-radius(50%);
+            color:white;
+            transition:all .5s ease-in-out 0s;
+        }
+    }
+    h5{
+        color: $font-color;
+    }
+    .button{
+        a{
+            color:$pri-color;
+            background:transparent;
+            padding: 15px 30px;
+            @include border-radius(50px);
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid $pri-color;
+            display: inline-block;
+
+            &:hover{
+                border:1px solid $pri-color;
+                color:white;
+                background:$pri-color;
+            }
+        }
+    }
+    
+}
+
+.upcoming-events{
+    h1{
+        position: relative;
+        display:inline-block;
+
+        &:before{
+            position: absolute;
+            content: '';
+            top:120%;
+            left:0;
+            background: linear-gradient(to right,$pri-color,#f8f9fb);
+            width: 90%;
+            height: 5px; 
+         }
+    }
+    .img-box{
+        overflow: hidden;
+        height: 200px;
+        margin-bottom: 30px;
+
+        img{
+            transition:.5s;
+        }
+
+        &:hover img{
+            transform: rotate(-8deg) scale(1.2);
+        }
+    }
+}
+
+.donator{
+    background:linear-gradient(rgba(255, 255, 255, 0.904),rgba(255, 255, 255, 0.818)),url(../pics/test-bg.jpg);
+    
+    .owl-carousel{
+        @include media(mb){
+            width:70%!important;
+        }
+
+        .item{
+            img{
+                height: 130px;
+                width: 130px;
+                border-radius: 50%;
+                border:3px solid $pri-color;
+            }
+
+            p{
+                font-size: 1.2em;
+            }
+        }
+        .owl-nav{
+            position: absolute;
+            top:30%;
+            width:100%;
+            font-size: 2em;
+    
+            .owl-prev{
+                outline:none;
+                height:50px;
+                width: 50px;
+                @include border-radius(50%);
+                box-shadow: 1px 1px 10px grey;
+                color:$pri-color;
+                position: absolute;
+                left:-20%;
+                transition: all .5s ease 0s;
+
+                &:hover{
+                    background:$pri-color;
+                    color:white;
+                }
+
+            }
+            .owl-next{
+                outline:none;
+                height:50px;
+                width: 50px;
+                @include border-radius(50%);
+                box-shadow: 1px 1px 10px grey;
+                color:$pri-color;
+                position: absolute;
+                right:-20%;
+                transition: all .5s ease 0s;
+
+                &:hover{
+                    background:$pri-color;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+.volunteer{
+    background: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.432)), url(../pics/image-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .card{
+        @include border-radius(50px);
+        @include media(sm){
+            width: 100%!important;
+        }
+
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    }
+
+    .button{
+        a{
+            color:$pri-color;
+            background:transparent;
+            padding: 15px 30px;
+            @include border-radius(50px);
+            text-decoration:none;   
+            transition: all .5s ease-in-out 0s;
+            border:1px solid $pri-color;
+            display: inline-block;
+
+            &:hover{
+                border:1px solid $pri-color;
+                color:white;
+                background:$pri-color;
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,195 @@
+.our-team{
+    .container{
+        h1{
+            position: relative;
+            display:inline-block;
+    
+            &:before{
+                position: absolute;
+                content: '';
+                top:110%;
+                left:0;
+                background: linear-gradient(to right,$sec-color,#f8f9fb);
+                width: 90%;
+                height: 5px; 
+             }
+        }
+        h5{
+            color:$font-color;
+        }
+    }
+
+    .owl-carousel{
+        .card{
+            border:none;
+            transition:.5s;
+
+            &:hover{
+                border:none;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
+            }
+
+            &:hover h4{
+                color:$pri-color;
+            }
+            &:hover .social-icons,
+            &:hover .social-icons .fab{
+                opacity:1;
+            }
+
+            &:hover .social-icons .icn-1{
+                transition-delay: .2s;
+            }
+            &:hover .social-icons .icn-2{
+                transition-delay: .3s;
+            }
+            &:hover .social-icons .icn-3{
+                transition-delay: .4s;
+            }
+            &:hover .social-icons .icn-4{
+                transition-delay: .5s;
+            }
+
+            img{
+                height: 300px;
+            }
+
+            .card-text span{
+                color:$font-color;
+            }
+            .social-icons{
+                position: absolute;
+                bottom:-6%;
+                left:50%;
+                transform: translateX(-50%);
+                background: linear-gradient(to right,$pri-color,$sec-color);
+                border-radius: 8px 8px 0 0;
+                opacity:0;
+                transition: .5s;
+
+                a{
+                    color:white;
+                    padding:5px;
+                }
+                .fab{
+                    opacity:0;
+                    transition:.5s;
+                }
+            }
+
+            
+        }
+        .owl-dots{
+    
+            .owl-dot{
+                outline:none;
+
+                .active span{
+                    background: $sec-color;
+                }
+                span{
+                    padding:0 20px;
+                    height: 5px;
+                }
+            }
+        }
+        .active.center{
+            .social-icons,.fab,.card{
+                opacity:1!important;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
+            }
+            h4{
+                color:$pri-color;
+            }
+        }
+    }
+}
+
+.we-are-special{
+    background: url(../pics/bg-map.png),$sec-color;
+
+    .container{
+        h1{
+            position: relative;
+            display:inline-block;
+    
+            &:before{
+                position: absolute;
+                content: '';
+                top:120%;
+                left:0;
+                background: linear-gradient(to left,$sec-color,#f8f9fb);
+                width: 90%;
+                height: 5px; 
+             }
+        }
+
+        .owl-carousel{
+            .card{
+                img{
+                    height:80px;
+                    width:80px;
+                    @include border-radius(50%);
+                    border:1px solid $sec-color;
+                }
+                h6{
+                    color:$font-color;
+                }
+                p{
+                    line-height:25px;
+                }
+
+                @include media(mb){
+                    padding:50px!important;
+                }
+            }
+
+            .owl-nav{
+                position: absolute;
+                top:40%;
+                display: block;
+                width: 100%;
+                display: flex;
+                justify-content:space-between;
+                .owl-prev{
+                    left:-6%;
+                    position:absolute;
+                    color:$sec-color;
+                    font-size:2em;
+                    outline:none;
+                    height:50px;
+                    width:50px;
+                    background: #fff;
+                    @include border-radius(50%);
+                    @include transition(all .5s ease 0s);
+                    box-shadow: 0 0 20px grey;
+
+                    &:hover{
+                        
+                        background: $sec-color;
+                        color:white;
+                    }
+                }
+                .owl-next{
+                    right:-6%;
+                    position:absolute;
+                    color:$sec-color;
+                    font-size:2em;
+                    outline:none;
+                    height:50px;
+                    width:50px;
+                    background: #fff;
+                    @include border-radius(50%);
+                    @include transition(all .5s ease 0s);
+                    box-shadow: 0 0 20px grey;
+
+                    &:hover{
+                        
+                        background: $sec-color;
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}
