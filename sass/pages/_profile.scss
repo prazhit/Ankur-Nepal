@@ -1,0 +1,81 @@
+.profile{
+    background: linear-gradient(#2b486ecb,#2b486ecc),url(../pics/gallery/gallery-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    img.mr-5{
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.452);
+    }
+}
+
+.profile-table{
+    .social{
+        border-left:1px solid lightgrey;
+
+        a{
+            color:$pri-color;
+
+            &:hover{
+                color:white;
+            }
+        }
+    }
+
+    .comment-box{
+        img{
+            height:80px;
+            width: 80px;
+            @include border-radius(50%);
+            margin-top: 10px;
+            border:1px solid $pri-color;
+        }
+
+        .cmt{
+            position: relative;
+            border:1px solid lightgrey;
+            @include border-radius(5px);
+
+            &:before{
+                content: '';
+                position: absolute;
+                top:35px;
+                left:-30px;
+                border-top:15px solid transparent;
+                border-bottom:15px solid transparent;
+                border-left:15px solid transparent;
+                border-right:15px solid lightgrey;
+
+                @include media(sm){
+                    border-bottom:15px solid lightgrey;
+                    border-right:15px solid transparent;
+                    left:50%;
+                    top:-30px;
+                    @include transform(translateX(-50%));
+                }
+
+            }
+            p{
+                text-align: justify;
+                line-height: 25px;
+                position: relative;
+
+                &:after{
+                    content:'\f10d';
+                    position: absolute;
+                    top:-10px;
+                    left:-10px;
+                    font-family: 'Font Awesome 5 Free';
+                    font-size:3em;
+                    font-weight: 600;
+                    color:$pri-color;
+                    opacity:.3;
+                    z-index:-1;
+                }
+            }
+        }
+    }
+}

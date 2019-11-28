@@ -265,11 +265,15 @@ nav.navbar .donate button:hover {
   height: 5px;
 }
 
-.footer .social-icons {
+.footer .love h6 {
+  letter-spacing: 1px;
+}
+
+.social-icons {
   line-height: 20px;
 }
 
-.footer .social-icons a {
+.social-icons a {
   border: 1px solid lightgrey;
   border-radius: 50%;
   height: 40px;
@@ -291,13 +295,9 @@ nav.navbar .donate button:hover {
   transition: .5s;
 }
 
-.footer .social-icons a:hover {
+.social-icons a:hover {
   background: #39ab1f;
   border: 1px solid #39ab1f;
-}
-
-.footer .love h6 {
-  letter-spacing: 1px;
 }
 
 .slider_inner {
@@ -1568,6 +1568,90 @@ nav.navbar .donate button:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.719)), url(../pics/gallery/gallery-5.jpeg);
   background-position: center;
   background-size: cover;
+}
+
+.profile {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b486ecb), to(#2b486ecc)), url(../pics/gallery/gallery-1.jpeg);
+  background: linear-gradient(#2b486ecb, #2b486ecc), url(../pics/gallery/gallery-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile img.mr-5 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 250px;
+  -webkit-box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.452);
+          box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.452);
+}
+
+.profile-table .social {
+  border-left: 1px solid lightgrey;
+}
+
+.profile-table .social a {
+  color: #39ab1f;
+}
+
+.profile-table .social a:hover {
+  color: white;
+}
+
+.profile-table .comment-box img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 1px solid #39ab1f;
+}
+
+.profile-table .comment-box .cmt {
+  position: relative;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.profile-table .comment-box .cmt:before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: -30px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid lightgrey;
+}
+
+@media (max-width: 1024px) {
+  .profile-table .comment-box .cmt:before {
+    border-bottom: 15px solid lightgrey;
+    border-right: 15px solid transparent;
+    left: 50%;
+    top: -30px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.profile-table .comment-box .cmt p {
+  text-align: justify;
+  line-height: 25px;
+  position: relative;
+}
+
+.profile-table .comment-box .cmt p:after {
+  content: '\f10d';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 3em;
+  font-weight: 600;
+  color: #39ab1f;
+  opacity: .3;
+  z-index: -1;
 }
 
 .breadcrumbs {
