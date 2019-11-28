@@ -52,28 +52,29 @@
         }
       
     }
+
+    .social-icons{
+        line-height: 20px;
+        a{
+            border:1px solid lightgrey;
+            @include border-radius(50%);
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0 8px;
+            text-decoration: none;
+            color:white;
+            transition:.5s;
+    
+            &:hover{
+                background:$pri-color;
+                border:1px solid $pri-color;
+            }
+        }
+    }
     
 }
 
-.social-icons{
-    line-height: 20px;
-    a{
-        border:1px solid lightgrey;
-        @include border-radius(50%);
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:0 8px;
-        text-decoration: none;
-        color:white;
-        transition:.5s;
-
-        &:hover{
-            background:$pri-color;
-            border:1px solid $pri-color;
-        }
-    }
-}

@@ -77,6 +77,14 @@
                 }
             }
 
+            h4 a{
+                color:$sec-color;
+
+                &:hover{
+                    color:$pri-color;
+                }
+            }
+
             
         }
         .owl-dots{
@@ -98,7 +106,7 @@
                 opacity:1!important;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
             }
-            h4{
+            h4 a{
                 color:$pri-color;
             }
         }

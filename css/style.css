@@ -269,11 +269,11 @@ nav.navbar .donate button:hover {
   letter-spacing: 1px;
 }
 
-.social-icons {
+.footer .social-icons {
   line-height: 20px;
 }
 
-.social-icons a {
+.footer .social-icons a {
   border: 1px solid lightgrey;
   border-radius: 50%;
   height: 40px;
@@ -295,7 +295,7 @@ nav.navbar .donate button:hover {
   transition: .5s;
 }
 
-.social-icons a:hover {
+.footer .social-icons a:hover {
   background: #39ab1f;
   border: 1px solid #39ab1f;
 }
@@ -748,6 +748,14 @@ nav.navbar .donate button:hover {
   transition: .5s;
 }
 
+.our-team .owl-carousel .card h4 a {
+  color: #2b486e;
+}
+
+.our-team .owl-carousel .card h4 a:hover {
+  color: #39ab1f;
+}
+
 .our-team .owl-carousel .owl-dots .owl-dot {
   outline: none;
 }
@@ -767,7 +775,7 @@ nav.navbar .donate button:hover {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
 }
 
-.our-team .owl-carousel .active.center h4 {
+.our-team .owl-carousel .active.center h4 a {
   color: #39ab1f;
 }
 
@@ -1589,14 +1597,42 @@ nav.navbar .donate button:hover {
 
 .profile-table .social {
   border-left: 1px solid lightgrey;
+  padding-left: 50px;
+}
+
+@media (max-width: 1024px) {
+  .profile-table .social {
+    border: none;
+    padding-left: 15px;
+  }
 }
 
 .profile-table .social a {
   color: #39ab1f;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 8px;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .profile-table .social a:hover {
   color: white;
+  background: #39ab1f;
+  border: 1px solid #39ab1f;
 }
 
 .profile-table .comment-box img {

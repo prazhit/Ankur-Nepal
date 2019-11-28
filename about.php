@@ -128,7 +128,7 @@
                         
                     </div>
                     <div class="card-text text-center p-4">
-                        <h4 class="font-weight-bold">Amanda Brown</h4>
+                        <h4 class="font-weight-bold"><a href="profile.php">Amanda Brown</h4></a>
                         
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                         
                     </div>
                     <div class="card-text text-center p-4">
-                        <h4 class="font-weight-bold">John Doe</h4>
+                        <h4 class="font-weight-bold"><a href="profile.php">John Doe</h4></a>
                         
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                         
                     </div>
                     <div class="card-text text-center p-4">
-                        <h4 class="font-weight-bold">Nick Davis</h4>
+                        <h4 class="font-weight-bold"><a href="profile.php">Nick Davis</h4></a>
                         
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                         
                     </div>
                     <div class="card-text text-center p-4">
-                        <h4 class="font-weight-bold">Chris Morore</h4>
+                        <h4 class="font-weight-bold"><a href="profile.php">Chris Morore</h4></a>
                         
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                         
                     </div>
                     <div class="card-text text-center p-4">
-                        <h4 class="font-weight-bold">Nina Helton</h4>
+                        <h4 class="font-weight-bold"><a href="profile.php">Nina Helton</h4></a>
                         
                     </div>
                 </div>
