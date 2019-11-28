@@ -170,49 +170,49 @@
             <div class="tab-content mt-4" id="nav-tabContent">
             <div class="tab-pane fadeIn animated show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="photos d-flex flex-wrap">
-                    <a href=""><img src="pics/about-2.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-3.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face3.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-3.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/about-2.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-3.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face3.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-3.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
                 </div>
             </div>
             <div class="tab-pane fadeIn animated" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <div class="photos d-flex flex-wrap">
-                    <a href=""><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
                 </div>
             </div>
             <div class="tab-pane fadeIn animated" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="photos d-flex flex-wrap">
-                    <a href=""><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face3.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
-                    <a href=""><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face1.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face2.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face3.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face6.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face7.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face4.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/face/face5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-5.jpg" class="img-thumbnail"></a>
+                    <a href="profile.php"><img src="pics/agent-7.jpg" class="img-thumbnail"></a>
                 </div>
             </div>
             </div>
